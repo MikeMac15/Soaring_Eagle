@@ -1,0 +1,26 @@
+#menu-up{
+    display: none;
+}
+#check{
+    display: none;
+}
+.bDhzPw {
+    display: none;
+}
+
+@media (max-width: 800px){
+    .navLinks {
+        height: 0rem;
+        transition: .3s ease;
+    }
+    #check:checked~.eqpntG #menu-down {
+        display: none;
+    }
+    #check:checked~.eqpntG #menu-up {
+        display: block;
+    }
+    #check:checked~.navLinks {
+        
+        height: 17.7rem;
+    }
+}
