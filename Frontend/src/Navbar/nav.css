@@ -11,7 +11,9 @@
 @media (max-width: 800px){
     .navLinks {
         height: 0rem;
+        width: 0;
         transition: .3s ease;
+        
     }
     #check:checked~.eqpntG #menu-down {
         display: none;
@@ -20,7 +22,9 @@
         display: block;
     }
     #check:checked~.navLinks {
-        
+        width: 100%;
         height: 17.7rem;
+        
     }
+   
 }

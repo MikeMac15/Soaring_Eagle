@@ -1,8 +1,10 @@
 import styled from "styled-components"
 
 const Banner = styled.div`
-background: antiquewhite;
+background: #c93d38;
+color: antiquewhite;
 text-align: center;
+padding:.25rem;
 `
 const FullIntro = styled.div`
 display: flex;
@@ -50,6 +52,7 @@ align-items: center;
 `
 
 const IntroP = styled.p`
+z-index:1;
 transform: translate(-500px);
 font-size: 2rem;
 color: whitesmoke;

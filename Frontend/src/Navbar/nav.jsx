@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './nav.css'
 
 const FullNav = styled.div`
+    z-index:10;
     // height: 4rem;
 
     background: rgba(0,0,0,.1);
@@ -57,9 +58,11 @@ const LinksDiv = styled.div`
     display: flex;
     // justify-content: space-between;
     align-items: center;
+    z-index:10;
 
     @media (max-width: 801px) { // Adjust the max-width as needed
         position: absolute;
+        z-index:10;
         top: 100%;
         left: 0;
         width: 100%;
@@ -74,7 +77,7 @@ const LinksDiv = styled.div`
         flex-direction: column;
 
         transition: .3s ease;
-
+        
     }
     `
     
@@ -82,6 +85,7 @@ const StyledLink = styled(Link)`
     margin-left: 2rem;
     text-decoration: none;
     color: antiquewhite;
+    z-index:10;
 
     @media (max-width: 800px) { 
         margin: 1.25rem 0;
@@ -89,7 +93,7 @@ const StyledLink = styled(Link)`
         
         #check:checked ~ .navLinks a {
             transform: translateY(0);
-            transition-delay: calc(.15s * var(--i));
+            
         }
         
     }
@@ -99,6 +103,7 @@ const DropdownBtn = styled.label`
     color: antiquewhite;
     cursor: pointer;
     display: none;
+    
 
     @media (max-width: 800px) {
         display: inline-flex;
@@ -119,7 +124,7 @@ const DropdownBtn = styled.label`
 export default function Navbar(){
 
     return (
-        <>
+        <div>
             <FullNav>
                 <input type="checkbox" id='check' />
                 <DropdownBtn htmlFor='check'>
@@ -144,9 +149,9 @@ export default function Navbar(){
                     <StyledLink>Funzone</StyledLink>
                 </LinksDiv>
 
-
                 
             </FullNav>
-        </>
+                
+        </div>
     )
 }

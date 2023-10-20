@@ -2,6 +2,7 @@ import Navbar from "../Navbar/nav"
 import About from "./about/about"
 import Intro from "./top/Intro"
 import Trusted from "./top/trusted"
+import WhyUs from "./whyUs/Why"
 
 
 
@@ -15,7 +16,8 @@ export default function Homepage(){
 
                     <Navbar/>
                     <Intro/>
-                    <Trusted/>
+                    <WhyUs/>
+                    {/* <Trusted/> */}
                     <About/>
                 {/* <h1>trusted</h1> */}
                 <h1>about</h1>

@@ -1,9 +1,14 @@
 import styled from "styled-components";
 
 const FullAbout = styled.div`
-    background-image: linear-gradient(#f9daa4, #fff);
-    padding-top: 3rem;
-    margin-bottom: 150px;
+    // background-image: linear-gradient(#f9daa4, #fff);
+    // background: #f9daa4;
+    background-image: linear-gradient(antiquewhite, #d1b590);
+
+   
+
+    padding: 3rem 0;
+    
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
@@ -12,21 +17,36 @@ const FullAbout = styled.div`
     gap: 1rem;
     @media (max-width: 700px){
         flex-direction: column;
+
     }
     
 `
 const AboutImg = styled.img`
     margin-top: 5vw;
-    height: 40vw;
-    width: 50vw;
+    height: 50vw;
+    width: 60vw;
     border-radius: 10px;
-   
+   opacity: 60%;
+   position: absolute;
+   transform: translate(-200px, -50px);
+   @media (max-width: 800px){
+    height: 100%;
+    width: 100%;
+    transform: translate(0px);
+}
 `
 const AboutTextDiv = styled.div`
     width: 40vw;
     text-indent: 1rem;
-    @media (max-width: 700px){
-        width: 80vw;
+    transform: translate(200px);
+    text-shadow: .5px .5px 2px grey;
+    @media (max-width: 1200px){
+        width: 60vw;
+        transform: translate(150px);
+    }
+    @media (max-width: 800px){
+        width: 60vw;
+        transform: translate(0px);
     }
 `
 

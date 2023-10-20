@@ -1,5 +1,8 @@
 import styled from 'styled-components';
-
+const Spacer = styled.div`
+height:.5rem;
+background:#c93d38;
+`
 const FullTrust = styled.div`
     height: 8rem;
     
@@ -40,6 +43,7 @@ export const Trusted = () => {
 
     return(
         <>
+        <Spacer/>
             <FullTrust>
                 <h3>Trusted by:</h3>
                 <TrustImgDiv>
@@ -51,6 +55,7 @@ export const Trusted = () => {
                     
                 </TrustImgDiv>
             </FullTrust>
+        <Spacer/>
         </>
     )
 };
