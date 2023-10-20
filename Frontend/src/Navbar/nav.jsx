@@ -24,6 +24,10 @@ const TitleNav = styled.div`
     
     align-items: center;
     text-align: center;
+
+    @media (max-width: 500px){
+        font-size: 0.5rem;
+    }
 `
 
 const WebsiteName = styled.h1`
@@ -45,7 +49,8 @@ const LogoNav = styled.img`
 
     @media (max-width: 800px) {
         height: 70px;
-        width : 120px; 
+        width : 120px;
+        transform: scaleX(-1); 
     }
 `
 const LinksDiv = styled.div`
@@ -61,9 +66,9 @@ const LinksDiv = styled.div`
         height: 0rem;
         overflow: hidden;
         
-        background: rgba(0,0,0,.1);
-        backdrop-filter: blur(50px);
-        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        background: rgba(0,0,0);
+        backdrop-filter: blur(100px);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
 
         
         flex-direction: column;
@@ -117,19 +122,19 @@ export default function Navbar(){
         <>
             <FullNav>
                 <input type="checkbox" id='check' />
-                <DropdownBtn for='check'>
-                    <i class='bx bx-menu' id='menu-down'></i>
-                    <i class='bx bx-chevron-up' id='menu-up' ></i>
+                <DropdownBtn htmlFor='check'>
+                    <i className='bx bx-menu' id='menu-down'></i>
+                    <i className='bx bx-chevron-up' id='menu-up' ></i>
                 </DropdownBtn>
                 {/* title */}
                 <TitleNav>
                     <WebsiteName>
-                        Soaring Eagle Ed Center 
+                        Soaring Eagle Educational Center 
                     </WebsiteName>
                 </TitleNav>
                 {/* img */}
                 <ImgNav>
-                    <LogoNav src='./NavPics/SeedLogo.png' alt='logo'/>
+                    <LogoNav src='./NavPics/SEED.png' alt='logo'/>
                 </ImgNav>
                 {/* links */}
                 <LinksDiv className='navLinks'>

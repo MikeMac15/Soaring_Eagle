@@ -1,4 +1,7 @@
 import Navbar from "../Navbar/nav"
+import About from "./about/about"
+import Intro from "./top/Intro"
+import Trusted from "./top/trusted"
 
 
 
@@ -6,33 +9,29 @@ import Navbar from "../Navbar/nav"
 export default function Homepage(){
 
     return (
-        <>
+        <>  
+            <div className="main">
 
 
-            <div id="everything">
-                {/* <navbar/> */}
-                
-                {/* intro */}
-                <section className="one">
                     <Navbar/>
-                    <h1>first page</h1>
-                </section>
-                {/* trusted */}
-                <section className="two">
+                    <Intro/>
+                    <Trusted/>
+                    <About/>
+                {/* <h1>trusted</h1> */}
+                <h1>about</h1>
+                
+
                     <h1>second page</h1>
-                </section>
-                {/* about */}
-                <section className="three">
+                    <h1>whats offered</h1>
                     <h1>third page</h1>
-                </section>
-                {/* whats offered */}
-                <section className="four">
+                    <h1>about the owners</h1>
                     <h1>fourth page</h1>
-                </section>
+                    <h1>contact us</h1>
                 {/* more stuff */}
                 {/* contact */}
                 {/* funzone info */}
 
+            
             </div>
         </>
     )

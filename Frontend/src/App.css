@@ -4,8 +4,11 @@
   box-sizing: border-box;
   font-family: 'Playfair Display', serif;
 }
+.main {
+  background-color: antiquewhite;
+}
 
-#everything {
+/* #everything {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
@@ -21,7 +24,7 @@
 
 .one {
   
-  background: blue;
+  background: linear-gradient(grey,white, grey);
 }
 .two {
   background: red;
@@ -31,4 +34,4 @@
 }
 .four {
   background: grey;
-}
+} */
