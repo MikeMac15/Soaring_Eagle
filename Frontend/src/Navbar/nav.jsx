@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 import './nav.css'
 
 const FullNav = styled.div`
-    z-index:10;
+    z-index:100;
     // height: 4rem;
 
-    background: rgba(0,0,0,.1);
+    background: #e8a623;
     backdrop-filter: blur(50px);
 
     display: flex;
@@ -32,7 +32,7 @@ const TitleNav = styled.div`
 `
 
 const WebsiteName = styled.h1`
-    color: antiquewhite;
+    color: whitesmoke;
 
     @media (max-width: 800px) {
         padding-right: 2rem;
@@ -62,14 +62,14 @@ const LinksDiv = styled.div`
 
     @media (max-width: 801px) { // Adjust the max-width as needed
         position: absolute;
-        z-index:10;
+        
         top: 100%;
         left: 0;
         width: 100%;
         height: 0rem;
         overflow: hidden;
         
-        background: rgba(0,0,0);
+        background: whitesmoke;
         backdrop-filter: blur(100px);
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
 
@@ -84,7 +84,7 @@ const LinksDiv = styled.div`
 const StyledLink = styled(Link)`
     margin-left: 2rem;
     text-decoration: none;
-    color: antiquewhite;
+    color: whitesmoke;
     z-index:10;
 
     @media (max-width: 800px) { 
@@ -125,7 +125,7 @@ export default function Navbar(){
 
     return (
         <div>
-            <FullNav>
+            <FullNav id='fullNav'>
                 <input type="checkbox" id='check' />
                 <DropdownBtn htmlFor='check'>
                     <i className='bx bx-menu' id='menu-down'></i>

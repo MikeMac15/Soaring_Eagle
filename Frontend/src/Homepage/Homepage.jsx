@@ -1,8 +1,13 @@
+import IntroFZ from "../IntroToFZ/IntroFZ"
 import Navbar from "../Navbar/nav"
 import About from "./about/about"
+import ContactBanner from "./contact/ContactBanner"
 import Intro from "./top/Intro"
-import Trusted from "./top/trusted"
+// import Trusted from "./top/trusted"
+import Cards from "./whatsOffered/Cards"
 import WhyUs from "./whyUs/Why"
+import Footer from "./footer/Footer"
+
 
 
 
@@ -13,27 +18,18 @@ export default function Homepage(){
         <>  
             <div className="main">
 
-
                     <Navbar/>
                     <Intro/>
                     <WhyUs/>
-                    {/* <Trusted/> */}
+                    {/* Contact us */}
                     <About/>
-                {/* <h1>trusted</h1> */}
-                <h1>about</h1>
-                
+                    <ContactBanner/>
+                    <Cards/>
+                    <IntroFZ />
 
-                    <h1>second page</h1>
-                    <h1>whats offered</h1>
-                    <h1>third page</h1>
-                    <h1>about the owners</h1>
-                    <h1>fourth page</h1>
-                    <h1>contact us</h1>
-                {/* more stuff */}
-                {/* contact */}
-                {/* funzone info */}
 
-            
+                    <Footer/>
+
             </div>
         </>
     )

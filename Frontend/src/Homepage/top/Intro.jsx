@@ -52,7 +52,7 @@ align-items: center;
 `
 
 const IntroP = styled.p`
-z-index:1;
+
 transform: translate(-500px);
 font-size: 2rem;
 color: whitesmoke;
@@ -77,6 +77,7 @@ margin-bottom: 2rem;
 }
 `
 const Introp = styled.p`
+z-index: 1;
 transform: translate(-500px);
 font-size: 1rem;
 color: whitesmoke;

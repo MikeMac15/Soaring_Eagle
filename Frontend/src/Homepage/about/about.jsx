@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import Button from "../reusables/Button";
+import PricingBtn from "../reusables/PricingLink";
 
 const FullAbout = styled.div`
     // background-image: linear-gradient(#f9daa4, #fff);
@@ -75,7 +77,9 @@ export const About = () => {
                     <StyledP>At SEEC, we are led by a dynamic team of education experts, Brenda VanSlyke and Shelley Lawrence. With a combined experience of over six decades, Brenda has dedicated 34 years of her life to working with children, 17 of which have been spent in the field of education. Meanwhile, Shelley Lawrence brings her impressive 29 years of education experience, along with her credentials as an accomplished administrator, to the table.</StyledP>
 
                     <StyledP>When you choose Soaring Eagle Educational Center, you're selecting a pathway to enhanced learning, confidence, and academic achievement. Join us on this educational journey, where we believe in soaring to new heights!</StyledP>
+
                 </AboutTextDiv>
+                    <PricingBtn text={'Click here to learn more about our owners.'}/>
             </FullAbout>
         </>
     )
