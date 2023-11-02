@@ -138,8 +138,8 @@ export default function Footer() {
                 <Footerh5>Email:</Footerh5>
                 <Footerh4> contact@seecntr.org</Footerh4>
                 <F_Links>Message us</F_Links>
-                <i class='bx bxl-facebook-circle'></i>
-                <i class='bx bxl-instagram-alt'></i>
+                <i className='bx bxl-facebook-circle'></i>
+                <i className='bx bxl-instagram-alt'></i>
             </Fsec3>
         </F2n3>
 

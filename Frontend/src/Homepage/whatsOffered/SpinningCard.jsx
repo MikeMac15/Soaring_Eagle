@@ -11,7 +11,7 @@ const CardContainer = styled.div`
         
         margin-top: 20px;
         margin-bottom: 50px;
-        margin-left: 40px;
+        margin-left: 1rem;
 
         &:hover .card-front{
             transform: rotateY(180deg)
@@ -44,6 +44,9 @@ const CardFront = styled.div`
 
         font-size: 1.4rem;
 
+        @media (max-width: 1200px){
+            font-size: 1.25rem;
+        }
         @media (max-width: 900px){
             font-size: 1.25rem;
         }

@@ -5,7 +5,7 @@ export default function PricingBtn({text}){
 
     return (
         <>
-            <ul class="menu3">
+            <ul className="menu3">
                 <li><span>{text}</span></li>
             </ul>
         </>

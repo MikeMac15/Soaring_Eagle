@@ -99,13 +99,15 @@ width: 60%;
     transform: translate(0px);
 }
 `
-
+const Span = styled.span`
+color: #7ad1ff;
+`
 
 export default function Intro(){
 
     return (
         <>
-        <Banner>Contact us today!</Banner>
+        <Banner>Give us a call! <Span>(509) 738-9129</Span> Tue-Fri 10am-5pm, Sat 9am-12pm </Banner>
             <FullIntro>
 
             <Leftdiv>.</Leftdiv>
@@ -116,6 +118,7 @@ export default function Intro(){
                 <Introp>
                     Our mission is to empower students to excel academically, boost their self-assurance, and sustain their academic success.
                 </Introp>
+
                 </TextDiv>
             </IntroDiv>
             </FullIntro>

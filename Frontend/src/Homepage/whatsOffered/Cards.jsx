@@ -140,7 +140,6 @@ const Cards = () => {
       
       if (scrollPosition >= triggerPosition) {
         setIsVisible(true);
-        console.log(isVisible)
       }
     };
 

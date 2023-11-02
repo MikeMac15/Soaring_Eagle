@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import { useState } from "react";
+import { useEffect } from "react";
+import Emailer from "./Emailer";
+
+
 
 
 const FullCB = styled.div`
@@ -24,7 +29,7 @@ padding: 2rem 0;
 `
 
 const Card = styled.div`
-height: 15rem;
+height: 20rem;
 width: 15rem;
 // background: black;
 
@@ -111,30 +116,87 @@ text-shadow: 0 0 1rem grey;
     font-size: 0.75rem;
 }
 `
+const ExtraDiv = styled.div`
+background: white;
+height: ${(props) => props.height}rem;
+transition: ease 1.25s;
+overflow: hidden;
+
+@media (max-width: 820px){
+    height: ${(props) => props.height * 1.4}rem;  
+}
+@media (max-width: 600px){
+    height: ${(props) => props.height * 1.5}rem;  
+}
+`
 
 export default function ContactBanner() {
+    
+    const [showEmailer, setShowEmailer] = useState(false)
+    const [showInfoDiv, setShowInfoDiv] = useState(false)
+   
+
+    const facebook = () => {
+        const facebooklink = 'https://www.facebook.com/SoaringEagleEdCenter'
+        window.open(facebooklink, '_blank')
+    }
+
+    const showMessenger = () => {
+        setShowEmailer(!showEmailer)
+        
+        setShowInfoDiv(false)
+        console.log(showEmailer, showInfoDiv)
+    }
+    const showInfo = () => {
+        setShowEmailer(false)
+        setShowInfoDiv(!showInfoDiv)
+    }
+
+    useEffect(() => {
+
+    }, [showEmailer,showInfoDiv])
+
 
     return(
 
         <>
             <FullCB>
-                <CBText>Get In Contact With Us Today!</CBText>
+                <CBText>Connect With Us Today!</CBText>
 
                 <AllCards>
-                    <Card color="skyblue">
+                    <Card color="skyblue" onClick={()=> facebook()}>
                         <Card1Background/>
                         <CardTitle>FaceBook</CardTitle>
                     </Card>
-                    <Card color="brown">
+                    <Card color="brown" onClick={()=> showMessenger()}>
                         <Card2Background/>
                         <CardTitle>Send Us A Message</CardTitle>
                     </Card>
-                    <Card color="green">
+                    <Card color="green" onClick={()=> showInfo()}>
                         <Card3Background/>
                         <CardTitle>Our Info</CardTitle>
                     </Card>
                 </AllCards>
             </FullCB>
+
+            
+                <ExtraDiv height={showEmailer ? 35 : 0}>
+                
+              
+                    <Emailer/>
+               
+            
+                </ExtraDiv>
+              
+            {
+                showInfoDiv 
+                ? 
+                <>
+                <h1>info</h1>
+                </>
+                : 
+                <></>
+            }
         </>
     )
 }
