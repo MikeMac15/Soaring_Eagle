@@ -1,0 +1,31 @@
+.venv
+__pycache__
+migrations
+
+# Python-related files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+
+# Secret keys and sensitive information
+.env
+
+# Static and media files (if you use a different storage backend, adjust this)
+/staticfiles/
+/media/
+
+# Dependency directories
+venv/
+env/
+*.env
+
+# Compiled Python files
+*.pyc
+__pycache__/
+
+# IDE-specific files (example for Visual Studio Code)
+.vscode/
