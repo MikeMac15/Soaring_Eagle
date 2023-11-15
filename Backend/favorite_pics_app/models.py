@@ -18,4 +18,4 @@ class FavoritePics(models.Model):
     objects = FavoritePicsManager()
 
     def __str__(self):
-        return f"{self.date, self.title}"
+        return f"{self.user, self.date}"

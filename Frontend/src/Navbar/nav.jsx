@@ -146,7 +146,7 @@ export default function Navbar(){
                     <StyledLink>About</StyledLink>
                     <StyledLink>Services</StyledLink>
                     <StyledLink>Contact</StyledLink>
-                    <StyledLink>Funzone</StyledLink>
+                    <StyledLink to={'/funzone/'}>Funzone</StyledLink>
                 </LinksDiv>
 
                 

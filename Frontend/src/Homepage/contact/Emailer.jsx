@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useState, useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 const FullEmailerDiv = styled.div`
     display: flex;
@@ -168,8 +169,8 @@ export default function Emailer() {
     
         emailjs.sendForm('service_zp94zsn', 'template_jw6q8gd', form.current, 'zB32I6I3ggkV8vlA2')
           .then((result) => {
-              console.log(result.text);
-              setShow(true)
+            //   console.log(result.text);
+              alert('Thank you for sending us a message! We will reach back out to you shortly. Have a nice day!')
               setSuccess(true)
           }, (error) => {
               console.log(error.text);

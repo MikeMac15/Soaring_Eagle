@@ -51,11 +51,11 @@ class Log_out(APIView):
 
     def post(self, request):
         user = request.user
-        token = request.auth  # This should give you the user's token
+        token = request.auth  
 
-        print(f"User: {user.username}, Token: {token.key}")  # Debugging statement
+        print(f"User: {user.username}, Token: {token.key}") 
 
-        token.delete()  # Delete the token
+        token.delete()  
         return Response(status=HTTP_204_NO_CONTENT)
 
 class Info(APIView):
